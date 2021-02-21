@@ -1,4 +1,4 @@
-package ru.mmteams91.quest.data
+package ru.mmteams91.quest.data.network.dto
 
 
 import com.squareup.moshi.Json

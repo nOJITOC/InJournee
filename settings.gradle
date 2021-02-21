@@ -1,3 +1,8 @@
+include ':core-navigation'
+include ':core-dagger'
+include ':core-utils'
+include ':core-network'
+include ':module-injector'
 include ':feature-quest'
 include ':app'
 rootProject.name = "InJournee"

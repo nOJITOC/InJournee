@@ -16,29 +16,9 @@ import java.util.jar.Manifest
 class QuestRepository : IQuestRepository {
 
     @RequiresPermission(android.Manifest.permission.ACCESS_FINE_LOCATION)
-    fun generateQuest(location: LatLng): Quest {
+    fun generateQuest(location: LatLng): Quest? {
         val client: PlacesClient
-        client.findAutocompletePredictions(
-            FindAutocompletePredictionsRequest.builder()
-                .setQuery("bar")
-                .setLocationBias(
-                    RectangularBounds.newInstance(
-                        LatLng(0.0, 0.0),
-                        LatLng(0.0, 0.0)
-                    )
-                )
-                .build()
-
-        ).addOnCompleteListener { result->
-
-            result.result.autocompletePredictions.forEach {prediction->
-                prediction.
-            }
-        }
-        client.findCurrentPlace(
-            FindCurrentPlaceRequest.builder(emptyList())
-                .build()
-        ).result.placeLikelihoods
+        return null
     }
 
 }

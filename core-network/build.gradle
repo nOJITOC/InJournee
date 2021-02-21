@@ -1,0 +1,17 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+apply plugin: 'kotlin-kapt'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+addDependencies(this, rest)
+addDependencies(this, dagger)
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'com.squareup.retrofit2:converter-moshi:2.5.0'
+}
