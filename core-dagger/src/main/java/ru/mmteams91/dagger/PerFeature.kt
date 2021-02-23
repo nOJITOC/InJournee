@@ -1,4 +1,4 @@
-package ru.mmteams91.core_dagger
+package ru.mmteams91.dagger
 
 import javax.inject.Scope
 

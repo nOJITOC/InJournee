@@ -1,4 +1,5 @@
 package ru.mmteams91.quest
 
-interface QuestApi {
-}
+data class Place(
+
+)

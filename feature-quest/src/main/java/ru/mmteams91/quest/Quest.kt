@@ -1,5 +1,5 @@
 package ru.mmteams91.quest
 
-class Quest {
-
-}
+data class Quest(
+    val points:List<Place>
+)
