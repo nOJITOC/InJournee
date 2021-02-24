@@ -1,5 +1,6 @@
 package ru.mmteams91.quest.map
 
+import android.opengl.GLSurfaceView
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
